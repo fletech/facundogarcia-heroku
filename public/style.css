@@ -1,3 +1,105 @@
-body{
+*{
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+     font-family: 'Courier New', Courier, monospace;
+     text-decoration: none;
+}
+
+/* Izquierda*/
+.izquierda { 
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     display: inline-block;
+     vertical-align: top;
+     /*background-image: url("/images/background.jpg");*/
+     opacity: 0.4;
+     
+}
+.izquierda video {
+     width: 100%;
+
+}
+
+header{
+     position: fixed;
+     width: 100%;
+     background-color: #383838;
+     
+}
+
+img{
+     display: block;
+     width: 140px;
+     height: auto;
+}
+
+/* Derecha */
+
+.derecha {
+     display: inline-block;
+     position: relative;
+     float: right;
+     width: 50%;
+     vertical-align: top;
+     background-color: white;
+     
+
+}
+
+h1 {
+     display: block;
+     text-align: left;
+     padding: 35% 40px 0px 27%;
+}
+
+h4 {
+     padding: 30px 40px 0px 27%;
+     width: 85%;
+}
+
+form {
+     text-align: center;
+     margin-left: 27%;
+     margin-right: 27%;
+     margin-top: 30px;
+     width: 49%;
+     background-color: #e9e9e9;
+     /*border: solid 1px #383838;*/
+     border-radius: 15px;
+}
+
+form input {
+     padding: 15px 0px 15px 20px;
+
+     margin-left: 0px;
+     width: 70%;
+     border: none;
+     background-color: #e9e9e9;
+     border-radius: 15px;
+}
+
+form button {
+     width: 30%;
+     border: none;
      background-color: tomato;
+     color: #383838;
+     padding: 15px 10px;
+     margin: 0px;
+     border-top-right-radius: 15px;
+     border-bottom-right-radius: 15px;
+}
+
+.derecha p {
+     margin-left: 27%;
+     width: 49%;
+     text-align: center;
+     margin-top: 30px;
+
+}
+
+p.margen {
+
+     color: white;
 }
