@@ -2,8 +2,24 @@
      margin: 0px;
      padding: 0px;
      box-sizing: border-box;
-     font-family: 'Courier New', Courier, monospace;
+     font-family: 'OCR-A','Courier New', Courier, monospace;
      text-decoration: none;
+}
+header{
+     position: relative;
+     width: 100%;
+     background-color: #383838;
+     
+}
+
+img{
+     display: block;
+     width: 140px;
+     height: auto;
+}
+
+.fondo {
+     position: relative;
 }
 
 /* Izquierda*/
@@ -22,24 +38,12 @@
 
 }
 
-header{
-     position: fixed;
-     width: 100%;
-     background-color: #383838;
-     
-}
-
-img{
-     display: block;
-     width: 140px;
-     height: auto;
-}
 
 /* Derecha */
 
 .derecha {
-     display: inline-block;
-     position: relative;
+     
+     position: absolute;
      float: right;
      width: 50%;
      vertical-align: top;
