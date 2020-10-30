@@ -11,6 +11,6 @@ app.get('/', function (req, res) {
    
 
 app.listen(process.env.PORT || 3000, function(){
-  console.log('Server running...')
+  console.log('Server running at http://localhost:3000/')
 })
 

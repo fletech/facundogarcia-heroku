@@ -1,14 +1,10 @@
-*{
-     margin: 0px;
-     padding: 0px;
-     box-sizing: border-box;
-     font-family: 'OCR-A','Courier New', Courier, monospace;
-     text-decoration: none;
-}
+
 header{
      position: relative;
      width: 100%;
-     background-color: #383838;
+     
+     height: 10vh;
+     z-index: 2;
      
 }
 
@@ -18,17 +14,17 @@ img{
      height: auto;
 }
 
-.fondo {
+section.fondo {
      position: relative;
+     display: flex;
+     height: 100vh;
 }
 
 /* Izquierda*/
 .izquierda { 
-     position: absolute;
+     position: relative;
      width: 100%;
      height: 100%;
-     display: inline-block;
-     vertical-align: top;
      /*background-image: url("/images/background.jpg");*/
      opacity: 0.4;
      
@@ -42,25 +38,34 @@ img{
 /* Derecha */
 
 .derecha {
-     
-     position: absolute;
-     float: right;
+     position: relative;
+     top:0;
+     right: 0;
+     display: flex;
      width: 50%;
-     vertical-align: top;
+     height: 100%;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     
      background-color: white;
+     z-index: 1;
      
 
 }
 
+
 h1 {
+
      display: block;
      text-align: left;
-     padding: 35% 40px 0px 27%;
+     
 }
 
 h4 {
-     padding: 30px 40px 0px 27%;
-     width: 85%;
+     padding-top: 30px ;
+     text-align: center; 
+     width: 60%;
 }
 
 form {
@@ -68,7 +73,7 @@ form {
      margin-left: 27%;
      margin-right: 27%;
      margin-top: 30px;
-     width: 49%;
+     width: 60%;
      background-color: #e9e9e9;
      /*border: solid 1px #383838;*/
      border-radius: 15px;
@@ -78,14 +83,14 @@ form input {
      padding: 15px 0px 15px 20px;
 
      margin-left: 0px;
-     width: 70%;
+     width: 65%;
      border: none;
      background-color: #e9e9e9;
      border-radius: 15px;
 }
 
 form button {
-     width: 30%;
+     width: 35%;
      border: none;
      background-color: tomato;
      color: #383838;
@@ -95,15 +100,9 @@ form button {
      border-bottom-right-radius: 15px;
 }
 
-.derecha p {
-     margin-left: 27%;
+.derecha p { 
      width: 49%;
      text-align: center;
      margin-top: 30px;
 
-}
-
-p.margen {
-
-     color: white;
 }
