@@ -56,6 +56,7 @@ header {
      display: flex;
      justify-content: space-between;
      position: absolute;
+     
 }
 
 .header .info p {
@@ -63,7 +64,7 @@ header {
      padding: 0px 10px;
      color: rgba(56, 56, 56, 0.8);
      z-index: 10;
-     font-weight: bold;
+     font-weight: normal;
      font-family: 'Concert One', cursive;
      letter-spacing: 1px;
 }
@@ -73,6 +74,8 @@ header {
      font-family: 'Concert One', cursive;
      letter-spacing: 1px;
      color: rgba(56, 56, 56, 0.8);
+     font-weight: normal;
+     
 }
 
 
