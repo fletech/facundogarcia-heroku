@@ -1,0 +1,206 @@
+@media only screen and (max-width: 1200px) {
+     header{
+          position: absolute;
+          width: 100%;
+          height: 70px;
+          z-index: 4;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          
+          background-color: rgba(255, 255, 255, 1);
+          
+     }
+
+     header img.logo{
+          
+          text-align: center;
+          padding-left: 10px;
+          width: 80px;
+          height: max-content;
+          z-index: 10;
+          opacity: 0.8;
+     }
+
+     header .info{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 0px;   
+          
+     }
+
+     header .info p {
+          position: relative;
+          padding: 0px 0px;
+          color: rgba(56, 56, 56, 0.8);
+          z-index: 10;
+          font-weight: normal;
+          font-family: 'Concert One', 'Courier New', Courier, monospace;
+          letter-spacing: 1px;
+          text-align: right;
+     }
+     
+     header .info p a {
+          font-weight: bold;
+          font-family: 'Concert One', 'Courier New', Courier, monospace;
+          letter-spacing: 1px;
+          color: rgba(56, 56, 56, 0.8);
+          font-weight: normal;
+          font-size: 14px;
+     }
+
+     .idiomas {
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          padding: 0px 40px;
+          align-items: center;
+          flex-grow: 0;
+          margin: 0px 0px 0px 0px;
+     }
+     main.fondo{
+          
+          position: absolute;
+          display: flex;
+          width: 100%;
+          height: 70%;
+               
+     }
+     .video {
+          background-color: rgba(36, 35, 35, 0.6)
+     }
+     main div.derecha{
+          
+          width: 100%;
+          height: 100vh;
+          background-color: rgba(36, 35, 35, 0.8);
+          
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: stretch;
+          padding: 5rem 5rem;
+          text-align: center;
+          box-shadow: 0px 2px 6px #e9e9e9;  
+     }
+     main div.derecha h4{
+          padding: 10px 70px;
+     }
+
+     main div.derecha h3{
+          padding: 10px 0px;
+     }
+
+     main div.derecha h2{
+          margin-top: 30px;
+          padding:30px 0px;
+          
+     }
+
+}
+
+
+@media only screen and (max-width: 700px) {
+
+     header img.logo{
+          text-align: center;
+          margin: 0px 30px 0px 5px;
+          width: 8  0px;
+          height: max-content;
+          z-index: 10;
+          opacity: 0.8;
+     
+     }
+     header .info{ 
+          align-items: flex-end;
+          margin-right: 20px
+     }
+     header.info p {
+          position: relative;
+          padding: 0px 0px;
+          color: rgba(56, 56, 56, 0.8);
+          z-index: 10;
+          font-weight: normal;
+          font-family: 'Concert One', cursive;
+          font-size: 10px;
+          text-align: left;
+          
+     }
+     header.info p a {
+          font-weight: normal;
+          font-family: 'Concert One', cursive;
+          
+          color: rgba(56, 56, 56, 0.8);
+          font-weight: normal;
+          font-size: 10px;
+     }
+     
+    
+     main div.derecha{
+          position: absolute;
+          top: 20px;
+          width: 100%;
+          height: 100vh;
+          background-color: rgba(36, 35, 35, 0.8);
+          display: flex;
+          flex-direction: column;
+          justify-content: unsafe;
+          align-items: center;
+          padding: 1rem 1rem;
+          text-align: center;
+          box-shadow: 0px 2px 6px #e9e9e9;  
+     }
+     .idiomas {
+          visibility: hidden;
+          display: none;
+     }
+     
+     .hidden {
+          visibility: visible;
+          display: flex;
+          top: 55px;
+          
+     }
+     form{
+          width: 100%;
+     }
+     main div.derecha button{
+          width: 100%;
+          border: none;
+          background-color: rgb(255, 99, 71);
+          color: white;
+          padding: 15px 10px;
+          margin: 0px;
+          border-radius: 15px;
+          font-family: 'Trispace', sans-serif;
+          font-weight: bold;
+          
+     }
+}
+
+@media only screen and (max-width: 700px) {
+
+     .hidden {
+          visibility: visible;
+          display: flex;
+          top: 30px;
+          
+     }
+     .hidden p{
+          color: rgba(255, 255, 255, 0.7)
+     }
+     main div.derecha {
+          padding-bottom: 0px;
+     }
+     main div.derecha h1 {
+          margin-top: 5px;
+          padding-top: 10px;
+     }
+
+     main div.derecha h4{
+          padding: 0px 30px;
+     }
+}

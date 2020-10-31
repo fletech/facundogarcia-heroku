@@ -5,9 +5,16 @@ const path = require('path');
 
 app.use(express.static(path.join(__dirname, './public')));
 
+app.get('/en/', function (req, res) {
+    res.sendFile(path.join(__dirname, '/views/home-en.html'))
+})
 app.get('/', function (req, res) {
-     res.sendFile(path.join(__dirname, '/views/home.html'))
+    res.sendFile(path.join(__dirname, '/views/home-ar.html'))
    })
+
+app.get('/ar/', function (req, res) {
+    res.sendFile(path.join(__dirname, '/views/home-ar.html'))
+  })
 
 app.get('/icon', function (req, res) {
     res.sendFile(path.join(__dirname, '/public/images/SVG/fav-icon-2.svg'))
