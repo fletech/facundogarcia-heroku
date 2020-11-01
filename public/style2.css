@@ -43,9 +43,6 @@ header img.logo{
      
 }
 
-header img{
-     
-}
 header .info{
      width: 100%;
      display: flex;
@@ -60,7 +57,7 @@ header .info p {
      z-index: 10;
      font-weight: normal;
      font-family: 'Concert One', cursive;
-     t
+
      text-align: left;
 }
 
