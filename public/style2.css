@@ -28,7 +28,7 @@ header {
      justify-content: space-between;
      align-items: center;
      
-     background-color: rgba(255, 255, 255, 1);
+     background-color: rgba(232, 233, 235, 0.9);
 }
 
 
@@ -38,12 +38,13 @@ header img.logo{
      width: 120px;
      height: max-content;
      z-index: 10;
-     opacity: 0.8;
+     opacity: 0.9;
+     
      
 }
 
 header img{
-     border-radius: 8px;
+     
 }
 header .info{
      width: 100%;
@@ -59,9 +60,17 @@ header .info p {
      z-index: 10;
      font-weight: normal;
      font-family: 'Concert One', cursive;
-     
+     t
      text-align: left;
 }
+
+.web-dev {
+     border-bottom: solid 4px rgba(240, 101, 67, 1);
+     padding-bottom: 10px;
+     font-size: 18px;
+}
+
+
 
 header .info p a {
      font-weight: bold;
@@ -71,6 +80,13 @@ header .info p a {
      text-align: left;
      
 }
+ header .info p a i{
+     font-size: 18px;
+     color: rgba(240, 101, 67, 1);
+     margin-right: 4px;
+ }
+
+
 .hidden    {
      visibility: hidden;
      display: none;
@@ -201,23 +217,33 @@ main div.derecha form input{
      font-weight: bold;
 }
 
-main div.derecha form button{
+/*--------MAILCHIMP----------*/
+
+
+main div.derecha button{
      width: 50%;
      border: none;
      background-color: rgb(255, 99, 71);
      color: white;
-     padding: 15px 10px;
+     padding: 20px 20px;
      margin: 0px;
-     border-top-right-radius: 15px;
-     border-bottom-right-radius: 15px;
+     border-radius: 15px;
      font-family: 'Trispace', sans-serif;
      font-weight: bold;
+     transition-delay: 0.1s;
+     
      
 }
 
 main div.derecha button:hover{
      background-color: rgba(255, 99, 71, 0.9);
      font-size: 13px;
+     border-radius: 12px;
+     box-shadow:0px 2px 8px thistle;
+     transition-duration: 0.2s;
+     
+     
+
 }
 
 main div.derecha form input:focus{
@@ -261,19 +287,5 @@ main div.derecha .tech a i{
      
      margin: 3px;
 }
-/*--------MAILCHIMP----------*/
 
-
-main div.derecha button{
-     width: 35%;
-     border: none;
-     background-color: rgb(255, 99, 71);
-     color: white;
-     padding: 15px 10px;
-     margin: 0px;
-     border-radius: 15px;
-     font-family: 'Trispace', sans-serif;
-     font-weight: bold;
-     
-}
 
