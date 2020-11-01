@@ -124,14 +124,14 @@
           color: rgba(56, 56, 56, 0.8);
           z-index: 10;
           font-weight: normal;
-          font-family: 'Concert One', cursive;
+          font-family: 'Concert One', 'Courier New', Courier, monospace;
           font-size: 10px;
           text-align: left;
           
      }
      header.info p a {
           font-weight: normal;
-          font-family: 'Concert One', cursive;
+          font-family: 'Concert One', 'Courier New', Courier, monospace;
           
           color: rgba(56, 56, 56, 0.8);
           font-weight: normal;
@@ -168,7 +168,7 @@
           width: 100%;
      }
      main div.derecha button{
-          width: 100%;
+          width: 50%;
           border: none;
           background-color: rgb(255, 99, 71);
           color: white;
