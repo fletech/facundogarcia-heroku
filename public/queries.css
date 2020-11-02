@@ -8,7 +8,6 @@
           justify-content: space-between;
           align-items: center;
           
-          background-color: rgba(255, 255, 255, 1);
           
      }
 
@@ -53,7 +52,8 @@
      }
 
      .idiomas {
-          position: relative;
+          position: absolute;
+          right:10px;
           display: flex;
           justify-content: space-between;
           padding: 0px 40px;
@@ -161,7 +161,7 @@
      .hidden {
           visibility: visible;
           display: flex;
-          top: 55px;
+          top: 40px;
           
      }
      form{
@@ -184,13 +184,18 @@
 @media only screen and (max-width: 700px) {
 
      .hidden {
+          position: absolute;
           visibility: visible;
           display: flex;
-          top: 30px;
+          top: 80px;
+          height: 20px;
           
      }
      .hidden p{
           color: rgba(255, 255, 255, 0.7)
+     }
+     .hidden .ar:hover, .hidden .en:hover{
+          height: 30px;
      }
      main div.derecha {
           padding-bottom: 0px;
@@ -213,22 +218,32 @@
 
      .hidden {
           visibility: visible;
+          position: absolute;
           display: flex;
           top: 80px;
-          margin-bottom: 0px;
-          position: absolute;
+          height: 20px;
+         
+
+          
      }
      .hidden p{
           color: rgba(255, 255, 255, 0.7)
      }
+
+     .hidden .ar:hover, .hidden .en:hover{
+          height: 30px;
+     }
+
      main div.derecha {
           flex-grow: 2;
           padding-bottom: 0px;
+          height: 100vh;
      }
      main .derecha .contenido {
           position: absolute;
           margin: 0px;
           top: 140px;
+          height: 100vh;
      }
      main div.derecha h1 {
           top: 0px;
