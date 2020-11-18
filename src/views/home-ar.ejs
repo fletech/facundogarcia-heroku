@@ -74,17 +74,44 @@
                
                     <!-- Mailchimp Signup Form -->
                     <form  action="/" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                         <div>
-                              <label for="name">Nombre y Apellido</label>
-                              <input autocomplete="off" id="name" name="name" type="text">
-                         </div>
-                         
-                         <div>
-                              <label for="email">email</label>
-                              <input autocomplete="off" id="email" name="email" type="email">
+                         <div class="containerInput name">
+                              <input autocomplete="off" id="name" name="name" type="text" required>
+                              <label for="name" class="label-name">
+                                   <span class= "content-name">Nombre:</span>
+                              </label>
                          </div>
 
-                         <button type="submit">Mantenganme informado</button>
+                         <div class="containerInput apellido">
+                              <input autocomplete="off" id="apellido" name="apellido" type="text" required>
+                              <label for="apellido" class="label-apellido">
+                                   <span class= "content-apellido">Apellido</span>
+                              </label>
+                         </div>
+
+                         <div class="containerInput email">
+                              <input autocomplete="off" id="email" name="email" type="text" required>
+                              <label for="email" class="label-email">
+                                   <span class= "content-email">e-Mail</span>
+                              </label>
+                         </div>
+
+                         <div class="containerInput button">
+                              <button id="submit" name="submit" type="submit" required>Enviar</button> 
+                              <label for="submit" class="label-submit">
+                                   <p></p>
+                                   <span class= "content-submit"></span>
+                              </label>
+                              
+                         </div>
+                         <!--
+                         <div>
+                              <input autocomplete="off" id="email" name="email" type="email">
+                              <label for="email" class="label-email">
+                                   <span class= "content-name">email</span>
+                              </label>
+                         </div>
+
+                         <button type="submit">Mantenganme informado</button>-->
 
                          <!--
                               action="https://gmail.us17.list-manage.com/subscribe/post?u=f5b15c59e8141d76a7b8e0454&amp;id=4e86bff121"

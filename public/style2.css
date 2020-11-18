@@ -31,7 +31,7 @@ header {
      display: flex;
      justify-content: space-between;
      align-items: center;
-     background-color: rgba(232, 233, 235, 0.9);
+     background-color: rgba(255, 255, 255, 1);
 }
 
 
@@ -180,7 +180,7 @@ main div.derecha div.contenido{
      display: flex;
      flex-direction: column;
      justify-content: space-between;
-
+     align-items: center;
      padding-top: 12vh;
      
      height:90%;
@@ -206,26 +206,133 @@ main div.derecha h4{
      padding: 10px 0px;
 }
 
+
+
+
+
+/* FORMULARIO Newsletter */
 main div.derecha form{
      width: 100%;
-     text-align: center;
-     padding: 10px 0px;
+     height: 200px;
+     padding: 10px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-direction: row;
+     flex-wrap: wrap;
      margin: 30px 0px;
-     /*border: solid 1px #383838;*/
-     border-radius: 6px;
-     background-color: coral;
+     background-color: rgba(241, 140, 114, 0.1);
+
+     
 }
 
-main div.derecha form input{
-     padding: 15px 0px 15px 20px;
-     margin-left: 0px;
-     width: 65%;
+form div.containerInput{
+     position: relative;
+     width: 48%;
+     height: 50px;
+     margin: 10px 0px; 
+     overflow: hidden;
+     /*border: solid 1px #383838;*/
+}
+
+main .derecha form div.containerInput.email{
+     width: 100%;
+}
+
+
+
+main form .containerInput input,
+main form .containerInput button{
+     height: 100%;
+     width: 100%;
      border: none;
-     background-color: #e9e9e9;
-     border-radius: 15px;
+     color: #111111;
+     padding-top: 20px;
+     padding-left:10px;
+     z-index: 5;
+     outline: none;
      font-family: 'Trispace', sans-serif;
      font-weight: bold;
+
 }
+
+main form .containerInput button{
+     padding: 0;
+}
+
+main form .containerInput label {
+     position: absolute;
+     bottom: 0px;
+     left: 0px;
+     width: 100%;
+     height: 100%;
+     pointer-events: none;
+     font-weight: bold;
+     font-size: 16px;
+     color: #363636
+}
+
+
+
+main form .containerInput label::after{
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     border-bottom: solid 3px coral;
+     background-color: #f7f7f75e;
+     left: 0px;
+     bottom:0px;
+     transform: translateX(-100%);
+     transition: transform 0.5s ease;
+    
+}
+
+form .containerInput label span {
+     position: absolute;
+     bottom: 5px;
+     left: 10px;
+     transition: all 0.5s ease;
+
+}
+
+
+
+form .containerInput input:focus + label span,
+form .containerInput input:valid + label span {
+     transform: translateY(-150%);
+     
+     font-size: 14px;
+     color: #363636;
+     z-index: 1;
+     font-weight: bold;
+}
+
+form .containerInput button:hover + label p::after{
+     content: "Enviar";
+     position: absolute;
+     top: 31%;
+     left: 40%;
+     align-self: center;
+     z-index: 2;
+     
+}
+
+form .containerInput button:hover + label::after{
+     transform: translateX(0%);
+     background-color: rgb(238, 177, 155);
+     z-index: 1;
+     
+}
+
+
+form input:focus + label::after,
+form input:valid + label::after{
+     transform: translateX(0%);
+     
+}
+
+
 
 /*--------MAILCHIMP----------*/
 
@@ -254,9 +361,7 @@ main div.derecha button:hover{
 }
 */
 
-main div.derecha form input:focus{
-     font-weight: lighter;
-}
+
 
 main div.derecha h3{
      color: white;
